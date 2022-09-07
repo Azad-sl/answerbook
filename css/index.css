@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style:none
+}
+a {
+	color: #353433;
+	text-decoration: none;
+}
+body {
+    padding: 5vh;
+    font-size: 12px;
+}
+
+.answer-book, .method, .answers {
+    width: 460px;
+    /* 视口高度 */
+    height: 90vh;
+    margin: 0 auto;
+    background-color: #272822;
+    font-family: "黑体";
+    color: #BFAD6F;
+	flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.answer-book img {
+    width: 420px;
+}
+
+.answer-book .top {
+    margin-top: 5vh;
+}
+.answer-book .bottom {
+    transform: rotate(180deg);
+    margin-top: 6vh
+}
+.answer-book .name {
+	margin-top: 8vh;
+	height: 10vh;
+    font-size: 3.0rem;
+}
+.answer-book .answer {
+	margin-top: 2vh;
+    font-size: 2.5rem;
+}
+
+.answer-book .join,
+.method .join-answer,
+.answers .goBack {
+    width: calc(100% - 10rem);
+	height: 2.8rem;
+	border: .1rem solid #BFAD6F;
+	border-radius: 6px;
+	margin: 5vh auto 0vh;
+	font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    left: 5rem;
+}
+.answer-book .join {
+	margin-top: 22vh;
+}
+.answer-book .join:hover,
+.method .join-answer:hover,
+.answers .goBack:hover {
+	cursor: pointer;
+}
+
+.method {
+    background-color: #F0EEDF;
+    color: #353433;
+}
+.method .title {
+    height: 14vh;
+    line-height: 8rem;
+    font-size: 3.0rem;
+	text-align: center;
+	text-shadow: 1px 1px;
+	text-shadow:  5px 5px 5px #666666;
+}
+.method .image,
+.answers .image {
+	text-align: center;
+	height: 20vh;
+	width: 20vh;
+	margin: 5vh auto 0vh;
+	display: block;
+}
+.method ul {
+    margin-top: 10vh;
+}
+.method li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 3px 1.5rem;
+}
+.method .my-answer {
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+.method .join-answer {
+	margin-top: 8vh;
+	border-color: #353433;
+}
+
+.answers {
+	background-color: #F0EEDF;
+    color: #353433;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.answers .image {
+	margin-top: 15vh;
+}
+.answers .question-answers {
+	width: calc(100% - 8rem);
+	margin-top: 10vh;
+	font-size: 1.2rem;
+	color: #9029C6;
+	line-height: 1.8rem;
+}
+.answers .goBack {
+	margin-top: 26vh;
+	border-color: #B16ED0;
+	color: #9029C6;
+}
+
+.none {
+    display: none;
+}
+.click {
+    display: flex;
+}
+.imgtf {
+	animation: rotateImage 1s linear infinite;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
